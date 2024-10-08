@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin-left: 3%;
+}
+
+a:link {
+    color: #95BDFF;
+}
+
+a:visited {
+    color: #F7C8E0;
+}
+
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#foto {
+    width: 100%;
+    margin-top: 40px;
+}
+
+nav {
+    background-color: #16423C;
+}
+
+a.menuAna {
+    color: #E9EFEC;
+}
+
+a.formacao {
+    color: #16423C;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.margin {
+    padding: 20px;
+}
+
+.scrollMenu{
+    scroll-margin-top: 40px;
+}
+
+.bcgColor{
+    background-color: #E9EFEC;
+}
+
+.topBcgSobre{
+    background-color: #16423C;
+    width: 8%;
+}
+
+.topBcgFormacao{
+    background-color: #16423C;
+    width: 26%;
+}
