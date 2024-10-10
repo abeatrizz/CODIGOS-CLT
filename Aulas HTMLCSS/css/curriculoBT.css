@@ -1,22 +1,14 @@
 #foto {
-    width: 100%;
+    width: 80%;
     margin-top: 40px;
 }
 
 nav {
-    background-color: #16423C;
+    background-color: #31E1F7;
 }
 
-a.menuDanilo {
-    color: #E9EFEC;
-}
-
-a.formacao {
-    color: #16423C;
-}
-
-.text-justify {
-    text-align: justify;
+a.menuAna {
+    color: #5C2FC2;
 }
 
 .margin {
@@ -33,10 +25,15 @@ a.formacao {
 
 .topBcgSobre{
     background-color: #16423C;
-    width: 8%;
+    width: 7%;
 }
 
 .topBcgFormacao{
     background-color: #16423C;
-    width: 26%;
+    width: 25%;
+}
+
+.topBcgExperiencia{
+    background-color: #16423C;
+    width: 27%;
 }
