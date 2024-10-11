@@ -31,41 +31,32 @@ table {
 }
 
 td {
-    border: 2px;
-    border-color: #95BDFF;
-
+    border: 2px solid #dddddd;
+    padding: 8px;
     text-align: center;
 }
 
 th {
-    border: 1px solid #dddddd;
+    border: 2px solid #dddddd;
     padding: 8px;
     text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #A68953;
-}
-
-address {
-    margin-left: 5%;
+    background-color: #31E1F7;
 }
 
 a:link {
-    color: #fc0000;
+    color: #400D51;
 }
 
 a:visited {
-    color: #43c645;
+    color: #400D51;
 }
 
 a:hover {
-    color: blueviolet;
+    color: #D800A6;
     font-size: large;
-}
-
-a:active {
-    color: rgba(232, 101, 237, 0.526);
 }
 
 iframe {
@@ -74,11 +65,12 @@ iframe {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 40px;
 }
 
 footer {
     font-size: xx-small;
+    text-align: center;
 }
 
 ul {
@@ -98,7 +90,3 @@ ul {
     text-align: center;
 }
 
-
-p.justificado{
-    text-align: justify;
-}
