@@ -62,6 +62,18 @@ a:link {
     text-align: center;
     width: 85%;
     margin-left: 3%;
+    border-collapse: collapse;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #DFF5FF;
+}
+
+td {
+    border: 2px solid #8810b1;
 }
 
 .form-control {
