@@ -15,9 +15,7 @@ a:link {
     margin-top: 40px;
 }
 
-.margin {
-    padding: 10px;
-}
+
 
 .scrollMenu {
     scroll-margin-top: 40px;
@@ -52,20 +50,14 @@ a:link {
     width: 20%;
 }
 
-.tblWidth {
-    width: 20%;
-}
+
 
 .table {
     border: 2px solid #8810b1;
-    padding: 2px;
     text-align: center;
-    width: 85%;
-    margin-left: 3%;
     border-collapse: collapse;
-    text-indent: initial;
-    unicode-bidi: isolate;
-    border-spacing: 2px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
@@ -73,43 +65,31 @@ a:link {
 }
 
 td {
-    border: 2px solid #8810b1;
+    border: 1px solid #8810b1;
 }
 
 .form-control {
     border: 2px solid #8810b1;
-    padding: 2px;
-    text-align: center;
-    width: 85%;
-    margin-left: 3%;
-    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    outline: none;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: box-shadow 0.3s;
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 .btn {
     background-color: #8810b1;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #31E1F7;
+    color: #8810b1;
 }
 
 footer {
     font-size: xx-small;
     text-align: center;
+    background-color: #8810b1;
+    color: #DFF5FF;
 }
+
+

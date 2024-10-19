@@ -23,7 +23,7 @@
             <a class="menuAna mx-3" href="#endereco">Endereço</a>
         </div>
     </nav>
-    <div id="apresentacao" class="bcgColor scrollMenu">
+    <div id="apresentacao" class="bcgColor margin scrollMenu">
         <div class="container-sm">
             <div class="row align-items-center">
                 <div class="col-4">
@@ -107,21 +107,98 @@
         <div class="container-sm">
             <h3>Formulário:</h3>
             <div class="card topBcgform my-2"></div>
-            <form>
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contato:</legend>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" pattern="\(\d{2}\) \d{5}-\d{4}"
+                        required placeholder="(00) 00000-0000" maxlength="15">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </fieldset>
+            <fieldset>
+                <legend>Informações sobre o projeto:</legend>
+                <div class="mb-3">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                    <label for="lingua">Língua aplicada no serviço:</label>
+                    <select class="form-control" id="lingua" name="lingua" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Francês</option>
+                        <option value="portugues">Português (pt-BR)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="arquivo">Upload de arquivo:</label>
+                    <input type="file" class="form-control-file" id="arquivo" name="arquivo"
+                        accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+                </div>
+                <div class="mb-3">
+                    <label>Linguagens preferidas:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem1" name="linguagem"
+                            value="javascript">
+                        <label class="form-check-label" for="linguagem1">JavaScript</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem2" name="linguagem" value="python">
+                        <label class="form-check-label" for="linguagem2">Python</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem3" name="linguagem" value="java">
+                        <label class="form-check-label" for="linguagem3">Java</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Tipo de banco de dados recomendado:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="banco1" name="banco" value="sql" required>
+                        <label class="form-check-label" for="banco1">SQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="banco2" name="banco" value="nosql">
+                        <label class="form-check-label" for="banco2">NoSQL</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="turno">Turno de preferência para reuniões:</label>
+                    <select class="form-control" id="turno" name="turno" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="horario">Melhor horário sugerido para reuniões:</label>
+                    <input type="time" class="form-control" id="horario" name="horario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="entrega">Previsão de entrega desejada:</label>
+                    <input type="date" class="form-control" id="entrega" name="entrega" required>
+                </div>
+            </fieldset>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </div>
@@ -129,7 +206,7 @@
         <div class="container-sm">
             <div class="row">
                 <div class="col-6">
-                    <h3>Endereço:</h3>
+                    <h3>Endereço e contato:</h3>
                     <div class="card topBcgEnd my-2"></div>
                     <div class="container-sm">
                         <address>
@@ -140,15 +217,15 @@
                 </div>
                 <div class="col-6">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15803.926631350469!2d-34.883829!3d-8.000828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab17f550a404cd%3A0x9e22375b168fe3c6!2sR.%20do%20Mar%C3%A7o%2C%20246%20-%20Aguazinha%2C%20Olinda%20-%20PE%2C%2053270-250!5e0!3m2!1spt-BR!2sbr!4v1729199874075!5m2!1spt-BR!2sbr"
-                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63215.706525401874!2d-34.883829!3d-8.000828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab17f550a404cd%3A0x9e22375b168fe3c6!2sR.%20do%20Mar%C3%A7o%2C%20246%20-%20Aguazinha%2C%20Olinda%20-%20PE%2C%2053270-250!5e0!3m2!1spt-BR!2sbr!4v1729368094219!5m2!1spt-BR!2sbr"
+                        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<footer class= "bcgColor margin scrollMenu">
+<footer>
     <samp>Ana Beatriz © Copyright 2024 - Todos os direitos reservados</samp>
 </footer>
 
