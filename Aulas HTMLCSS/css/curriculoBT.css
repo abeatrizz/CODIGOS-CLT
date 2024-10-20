@@ -1,5 +1,48 @@
+#foto {
+    width: 80%;
+    margin-top: 40px;
+}
+
 nav {
     background-color: #31E1F7;
+}
+
+td {
+    border: 1px solid #8810b1;
+}
+
+h3 {
+    font-size: calc(1.3rem + .6vw);
+    color: #000000;
+}
+
+h1 {
+    font-size: 40px;
+    color: #000000;
+}
+
+label {
+    color: #000000;
+    text-align: -webkit-match-parent;
+    width: 80%;
+    margin-left: 10%;
+}
+
+legend {
+    color: #000000;
+    margin-left: 5%;
+}
+
+select {
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer {
+    font-size: xx-small;
+    text-align: center;
+    background-color: #8810b1;
+    color: #DFF5FF;
 }
 
 a.menuAna {
@@ -9,13 +52,14 @@ a.menuAna {
 a:link {
     color: #8810b1;
 }
-
-#foto {
+.value {
     width: 80%;
-    margin-top: 40px;
+    margin-left: 10%;
 }
 
-
+.margin {
+    padding: 20px;
+}
 
 .scrollMenu {
     scroll-margin-top: 40px;
@@ -27,69 +71,61 @@ a:link {
 
 .topBcgSobre {
     background-color: #31E1F7;
-    width: 7%;
+    width: 8%;
 }
 
 .topBcgFormacao {
     background-color: #31E1F7;
-    width: 22%;
+    width: 26%;
 }
 
 .topBcgExperiencia {
     background-color: #31E1F7;
-    width: 24%;
+    width: 28%;
+}
+
+.topBcgForm {
+    background-color: #31E1F7;
+    width: 27%;
 }
 
 .topBcgEnd {
     background-color: #31E1F7;
-    width: 20%;
+    width: 50%;
 }
 
-.topBcgform {
-    background-color: #31E1F7;
+.tblWidth {
     width: 20%;
 }
-
-
 
 .table {
     border: 2px solid #8810b1;
     text-align: center;
     border-collapse: collapse;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-bg-type: #DFF5FF;
 }
 
-td {
-    border: 1px solid #8810b1;
-}
-
 .form-control {
     border: 2px solid #8810b1;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 .btn {
     background-color: #8810b1;
+    margin-left: 10%;
 }
 
 .btn:hover {
     background-color: #31E1F7;
     color: #8810b1;
-}
-
-footer {
-    font-size: xx-small;
-    text-align: center;
-    background-color: #8810b1;
-    color: #DFF5FF;
 }
 
 
